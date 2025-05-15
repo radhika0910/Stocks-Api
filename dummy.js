@@ -1,6 +1,6 @@
 // Path: dummy.js
 
-const API_URL = 'https://stocks-api-q8yg.onrender.com';
+const API_URL = 'http://localhost:3000';
 
 
 async function fetchEndpoint(endpoint) {
@@ -80,7 +80,7 @@ async function testAllEndpoints() {
   // Test basic endpoints
   await fetchEndpoint('/');
   await fetchEndpoint('/api/stocks');
-  await fetchEndpoint('/api/stocks/AAPL');
+  await fetchEndpoint('/api/stocks/NIFTY50');
   await fetchEndpoint('/api/stocks/AAPL/history');
   await fetchEndpoint('/api/stocks/AAPL/history?range=5d');
   await fetchEndpoint('/api/stocks/AAPL/intraday');

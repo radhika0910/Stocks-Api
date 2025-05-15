@@ -21,7 +21,9 @@ const stockData = {
     { symbol: 'JPM', name: 'JPMorgan Chase & Co.', sector: 'Financials' },
     { symbol: 'V', name: 'Visa Inc.', sector: 'Financials' },
     { symbol: 'JNJ', name: 'Johnson & Johnson', sector: 'Healthcare' },
-    { symbol: 'WMT', name: 'Walmart Inc.', sector: 'Consumer Staples' }
+    { symbol: 'WMT', name: 'Walmart Inc.', sector: 'Consumer Staples' },
+    { symbol: 'NIFTY', name: 'NIFTY', sector: 'Consumer Staples' },
+    { symbol: 'SENSEX', name: 'SENSEX', sector: 'Consumer Staples' }
   ],
   priceHistory: {},
   news: {}
@@ -45,6 +47,8 @@ function initializePriceHistory() {
       case 'V': basePrice = 240; break;
       case 'JNJ': basePrice = 160; break;
       case 'WMT': basePrice = 65; break;
+      case 'NIFTY': basePrice = 50; break;
+      case 'SENSEX': basePrice = 60; break;
       default: basePrice = 100;
     }
     
