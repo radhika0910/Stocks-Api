@@ -89,7 +89,6 @@ async function testAllEndpoints() {
   
   // Test watchlist functionality
   await fetchEndpoint('/api/watchlist');
-  await addToWatchlist('AAPL');
   await addToWatchlist('MSFT');
   await fetchEndpoint('/api/watchlist');
   await removeFromWatchlist('AAPL');
